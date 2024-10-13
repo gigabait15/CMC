@@ -18,4 +18,5 @@
 ## Запуск проекта
 >backend: `uvicorn backend.src.main:app --reload`
 
-> frontend: `npm run dev`
+> frontend: `npm --prefix ./frontend run dev`
+> frontend: `npm --prefix ./frontend run build`
