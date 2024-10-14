@@ -14,7 +14,7 @@ const App = () => {
   const [curInfo, setCurInfo] = useState(null);
 
   const fetchCur = () => {
-    axios.get('http://127.0.0.1:8000/cryptocurrencies')
+    axios.get('https://x0ch-ftnx-28ad.gw-1a.dockhost.net/cryptocurrencies')
       .then((r) => {
         const CurResponse = r.data
         const menuItems = [
@@ -26,7 +26,7 @@ const App = () => {
   };
 
     const fetchCurID = () => {
-    axios.get(`http://127.0.0.1:8000/cryptocurrencies/${curID}`)
+    axios.get(`https://x0ch-ftnx-28ad.gw-1a.dockhost.net/cryptocurrencies/${curID}`)
       .then((r) => {
 
         setCurInfo(r.data)

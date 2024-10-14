@@ -10,6 +10,7 @@ RUN npm run build
 FROM python:3.12-slim AS backend-build
 WORKDIR /app
 COPY backend/req.txt ./
+COPY .env ./
 RUN pip install --no-cache-dir -r req.txt
 COPY backend/ /app/backend
 
